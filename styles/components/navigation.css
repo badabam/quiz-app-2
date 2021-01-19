@@ -3,9 +3,26 @@
 .app-navigation__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0;
 }
 .app-navigation__item {
   display: flex;
+  flex-flow: column;
 }
 .app-navigation__item a {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 5px 5px;
+}
+.app-navigation__item a.app-navigation__item--active,
+.app-navigation__item a:hover {
+  background: teal;
+}
+.app-navigation__item a > i {
+  display: block;
+}
+.app-navigation__item a > .app-navigation__label {
+  font-size: 12px;
 }
