@@ -8,7 +8,7 @@
     'footer';
 }
 .app-grid__header {
-  grid-area: 'header';
+  grid-area: header;
   position: fixed;
   top: 0;
   width: 100%;
@@ -17,11 +17,11 @@
   z-index: 1;
 }
 .app-grid__main {
-  grid-area: 'main';
+  grid-area: main;
   height: 100vh;
 }
 .app-grid__footer {
-  grid-area: 'footer';
+  grid-area: footer;
   position: fixed;
   bottom: 0;
   width: 100%;
