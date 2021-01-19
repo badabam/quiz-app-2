@@ -1,31 +1,21 @@
 .app-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto 1fr auto;
   grid-template-areas:
     'header'
     'main'
     'footer';
+  height: 100vh;
 }
 .app-grid__header {
   grid-area: header;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 50px;
   background: pink;
-  z-index: 1;
 }
 .app-grid__main {
   grid-area: main;
-  height: 100vh;
+  overflow: scroll;
 }
 .app-grid__footer {
   grid-area: footer;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
   background: black;
-  z-index: 1;
 }

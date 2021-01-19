@@ -5,7 +5,7 @@
     "prettier:write": "prettier --write .",
     "stylelint": "npx stylelint \"**/*.css\"",
     "test": "htmlhint && prettier --check . && npm run stylelint",
-    "start": "live-server --no-css-inject --wait-500"
+    "start": "live-server --no-css-inject"
   },
   "keywords": [],
   "author": "Anneke Schütte <a.schuette.hh@gmail.com> (https://github.com/AnnekeSchuette/)",
