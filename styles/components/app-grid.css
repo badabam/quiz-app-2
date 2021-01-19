@@ -1,0 +1,23 @@
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+.app-grid__header {
+  grid-area: 'header';
+  position: fixed;
+  top: 0;
+  height: 40px;
+}
+.app-grid__main {
+  grid-area: 'main';
+}
+.app-grid__footer {
+  grid-area: 'footer';
+  position: fixed;
+  bottom: 0;
+  height: 40px;
+}
