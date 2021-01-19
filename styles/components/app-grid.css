@@ -1,6 +1,7 @@
 .app-grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto;
   grid-template-areas:
     'header'
     'main'
@@ -10,14 +11,21 @@
   grid-area: 'header';
   position: fixed;
   top: 0;
-  height: 40px;
+  width: 100%;
+  height: 50px;
+  background: pink;
+  z-index: 1;
 }
 .app-grid__main {
   grid-area: 'main';
+  height: 100vh;
 }
 .app-grid__footer {
   grid-area: 'footer';
   position: fixed;
   bottom: 0;
-  height: 40px;
+  width: 100%;
+  height: 50px;
+  background: black;
+  z-index: 1;
 }
