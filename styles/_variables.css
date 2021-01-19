@@ -1,0 +1,17 @@
+:root {
+  /* color scheme */
+  /* CSS HEX */
+  --color-rich-black: #080808ff;
+  --color-eerie-black: #1e1e1eff;
+  --color-jet: #323232ff;
+  --color-sky-blue1: #05d1f0ff;
+  --color-sky-blue2: #7ae5f6ff;
+  --color-azure: #eff9fbff;
+
+  /* spaces */
+  --space-xsmall: 5px;
+  --space-small: 15px;
+  --space-medium: 25px;
+  --space-large: 35px;
+  --space-xlarge: 50px;
+}

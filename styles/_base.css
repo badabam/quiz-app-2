@@ -3,9 +3,10 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Libre Franklin', sans-serif;
   font-size: 112.5%;
   line-height: 1.5;
+  font-weight: 300;
   margin: 0;
 }
 

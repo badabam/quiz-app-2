@@ -5,24 +5,34 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0;
   margin: 0;
+  background: var(--color-sky-blue1);
+  background: var(--color-rich-black);
+  gap: 1px;
 }
 .app-navigation__item {
   display: flex;
+  gap: 10px;
   flex-flow: column;
+  background: var(--color-rich-black);
+  background: var(--color-eerie-black);
 }
 .app-navigation__item a {
-  color: #fff;
+  color: var(--color-azure);
   text-align: center;
   text-decoration: none;
   padding: 15px 5px 5px;
 }
-.app-navigation__item a.app-navigation__item--active,
+.app-navigation__item--active a,
 .app-navigation__item a:hover {
-  background: teal;
+  background: var(--color-sky-blue1);
+  background: var(--color-rich-black);
+  color: var(--color-rich-black);
+  color: var(--color-sky-blue1);
 }
 .app-navigation__item a > i {
   display: block;
+  font-size: 1.3em;
 }
 .app-navigation__item a > .app-navigation__label {
-  font-size: 12px;
+  font-size: 0.7em;
 }

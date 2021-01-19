@@ -9,14 +9,36 @@
 }
 .app-grid__header {
   grid-area: header;
-  background: pink;
+  background: var(--color-rich-black);
+  color: var(--color-azure);
   text-align: center;
+  /* background: var(--color-sky-blue1); */
+  color: var(--color-azure);
+}
+.app-grid__header h1 {
+  font-size: 1em;
+  line-height: 1;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.app-grid__header h1 > span {
+  color: var(--color-rich-black);
+  background: var(--color-sky-blue1);
+  padding: 0px 5px;
+  margin-right: 2px;
+  border-radius: 3px;
+  background: var(--color-azure);
+  color: var(--color-azure);
+  background: var(--color-rich-black);
+  border: 1px solid var(--color-azure);
+  border: 1px solid var(--color-sky-blue1);
+  color: var(--color-sky-blue1);
 }
 .app-grid__main {
   grid-area: main;
   overflow-y: scroll;
+  background: var(--color-azure);
 }
 .app-grid__footer {
   grid-area: footer;
-  background: black;
 }
