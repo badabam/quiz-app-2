@@ -5,7 +5,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 0;
   margin: 0;
-  background: var(--color-sky-blue1);
+  /* background: var(--color-sky-blue1); */
   background: var(--color-rich-black);
   gap: 1px;
 }
@@ -13,7 +13,7 @@
   display: flex;
   gap: 10px;
   flex-flow: column;
-  background: var(--color-rich-black);
+  /* background: var(--color-rich-black); */
   background: var(--color-eerie-black);
 }
 .app-navigation__item a {
@@ -24,10 +24,11 @@
 }
 .app-navigation__item--active a,
 .app-navigation__item a:hover {
-  background: var(--color-sky-blue1);
+  /* background: var(--color-sky-blue1);
+  color: var(--color-rich-black); */
   background: var(--color-rich-black);
-  color: var(--color-rich-black);
   color: var(--color-sky-blue1);
+  transition: background-color 0.5s ease-out;
 }
 .app-navigation__item a > i {
   display: block;
