@@ -1,0 +1,11 @@
+.app-navigation {
+}
+.app-navigation__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.app-navigation__item {
+  display: flex;
+}
+.app-navigation__item a {
+}

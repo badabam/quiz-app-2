@@ -10,10 +10,11 @@
 .app-grid__header {
   grid-area: header;
   background: pink;
+  text-align: center;
 }
 .app-grid__main {
   grid-area: main;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .app-grid__footer {
   grid-area: footer;
