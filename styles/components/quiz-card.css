@@ -11,11 +11,12 @@
   top: -8px;
   font-size: 2em;
   color: var(--color-rich-black);
-  background: #fff;
+  text-decoration: none;
 }
 .quiz-card__bookmark.quiz-card__bookmark--active,
 .quiz-card__bookmark:hover {
   color: var(--color-sky-blue1);
+  transition: all 0.3s ease-out;
 }
 .quiz-card__details {
   position: relative;
