@@ -1,7 +1,7 @@
 .quiz-card {
   position: relative;
   background: #fff;
-  margin: var(--space-medium);
+  /* margin: var(--space-medium); */
   padding: var(--space-medium);
   box-shadow: 0 0 5px #00000015;
 }
