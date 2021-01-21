@@ -3,7 +3,8 @@
 @import '_fonts.css';
 @import '_variables.css';
 @import '_utility.css';
-@import 'components/app-grid.css';
-@import 'components/navigation.css';
-@import 'components/quiz-card.css';
-@import 'components/badge.css';
+@import '../components/app-grid.css';
+@import '../components/header.css';
+@import '../components/navigation.css';
+@import '../components/quiz-card.css';
+@import '../components/badge.css';
