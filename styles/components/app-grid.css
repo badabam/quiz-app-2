@@ -10,18 +10,21 @@
   margin: 0 auto;
   background: var(--color-azure);
 }
+
 .app-grid__header {
   grid-area: header;
   background: var(--color-rich-black);
   color: var(--color-azure);
   text-align: center;
 }
+
 .app-grid__header h1 {
   font-size: 1em;
   line-height: 1;
   text-transform: uppercase;
   font-weight: 300;
 }
+
 .app-grid__header h1 > span {
   padding: 0px 5px;
   margin-right: 2px;
@@ -30,6 +33,7 @@
   border: 1px solid var(--color-sky-blue1);
   color: var(--color-sky-blue1);
 }
+
 .app-grid__main {
   grid-area: main;
   display: grid;
@@ -38,18 +42,21 @@
   padding: var(--space-medium);
   background: var(--color-azure);
 }
+
 @media screen and (min-width: 768px) {
   .app-grid__main {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 /* create some extra space in main - padding not working with overfloy:scroll */
-.app-grid__main:after {
+.app-grid__main::after {
   content: '';
   display: block;
   height: var(--space-small);
   width: 100%;
 }
+
 .app-grid__footer {
   grid-area: footer;
 }

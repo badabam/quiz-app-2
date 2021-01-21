@@ -1,44 +1,55 @@
 .border-top {
-  border-top: 1px solid var(--color-azure);
+  border-top: 1px solid var(--color-azure) !important;
 }
+
 .border-bottom {
-  border-bottom: 1px solid var(--color-azure);
+  border-bottom: 1px solid var(--color-azure) !important;
 }
 
 .margin {
-  margin-bottom: var(--space-medium);
+  margin-bottom: var(--space-medium) !important;
 }
+
 * + .margin {
   margin-top: var(--space-medium) !important;
 }
+
 .margin-top {
   margin-top: var(--space-medium) !important;
 }
+
 .margin-bottom {
   margin-bottom: var(--space-medium) !important;
 }
+
 .margin-left {
   margin-left: var(--space-medium) !important;
 }
+
 .margin-right {
   margin-right: var(--space-medium) !important;
 }
 
 .padding {
-  padding-bottom: var(--space-medium);
+  padding-bottom: var(--space-medium) !important;
 }
+
 * + .padding {
   padding-top: var(--space-medium) !important;
 }
+
 .padding-top {
   padding-top: var(--space-medium) !important;
 }
+
 .padding-bottom {
   padding-bottom: var(--space-medium) !important;
 }
+
 .padding-left {
   padding-left: var(--space-medium) !important;
 }
+
 .padding-right {
   padding-right: var(--space-medium) !important;
 }
