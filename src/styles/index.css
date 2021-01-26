@@ -1,8 +1,8 @@
 @import '../lib/icomoon_zondicons/style.css';
-@import '_base.css';
-@import '_fonts.css';
-@import '_variables.css';
-@import '_utility.css';
+@import './_base.css';
+@import './_fonts.css';
+@import './_variables.css';
+@import './_utility.css';
 @import '../components/app-grid.css';
 @import '../components/header.css';
 @import '../components/navigation.css';
