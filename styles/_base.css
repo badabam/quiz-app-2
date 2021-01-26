@@ -15,7 +15,6 @@ h2,
 h3 {
   line-height: 1.3;
 }
-
 details[open] summary ~ * {
   animation: sweep 0.3s ease-in;
 }
