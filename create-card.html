@@ -10,7 +10,49 @@
     <header class="app-grid__header">
       <h1>Create Quiz Card</h1>
     </header>
-    <main class="app-grid__main"></main>
+    <main class="app-grid__main">
+      <form class="form">
+        <fieldset class="form__fieldset">
+          <div class="margin-top">
+            <label class="form__label" for="textarea-question"
+              >Add question</label
+            >
+            <textarea
+              class="form__textarea"
+              name="textarea"
+              id="textarea-question"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="margin-top">
+            <label class="form__label" for="textarea-answer">Add answer</label>
+            <textarea
+              class="form__textarea"
+              name="textarea"
+              id="textarea-answer"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="margin-top">
+            <label class="form__label" for="input-tags">Add Tags</label>
+            <input
+              type="text"
+              class="form__input form__input--text"
+              name="text"
+              id="input-tags"
+              placeholder="Separated by commas"
+            />
+          </div>
+          <div class="margin-top">
+            <input
+              type="submit"
+              class="form__submit form__input--text"
+              value="submit"
+            />
+          </div>
+        </fieldset>
+      </form>
+    </main>
     <footer class="app-grid__footer">
       <nav class="navigation">
         <li class="navigation__item">
