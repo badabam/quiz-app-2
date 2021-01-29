@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+[hidden] {
+  display: none !important;
+}
 body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 112.5%;

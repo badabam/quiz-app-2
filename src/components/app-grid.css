@@ -17,25 +17,20 @@
 
 .app-grid__main {
   grid-area: main;
-  display: grid;
   overflow-y: scroll;
+}
+
+.section-grid {
+  display: grid;
   grid-gap: var(--space-medium);
   padding: var(--space-medium);
   background: var(--color-azure);
 }
 
 @media screen and (min-width: 768px) {
-  .app-grid__main {
+  .section-grid {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-/* create some extra space in main - padding not working with overfloy:scroll */
-.app-grid__main::after {
-  content: '';
-  display: block;
-  height: var(--space-small);
-  width: 100%;
 }
 
 .app-grid__footer {

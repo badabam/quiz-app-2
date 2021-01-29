@@ -12,23 +12,21 @@
   gap: 10px;
   flex-flow: column;
   background: var(--color-eerie-black);
-}
-
-.navigation__item a {
   color: var(--color-azure);
   text-align: center;
   text-decoration: none;
   padding: 15px 5px 5px;
+  align-items: center;
 }
 
-.navigation__item--active a,
-.navigation__item a:hover {
+.navigation__item--active,
+.navigation__item:hover {
   background: var(--color-rich-black);
   color: var(--color-sky-blue1);
   transition: background-color 0.5s ease-out;
 }
 
-.navigation__item a > i {
+.navigation__item > i {
   display: block;
   font-size: 1.3em;
 }

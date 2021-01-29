@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script defer type="module" src="./js/index.js"></script>
   </head>
   <body class="app-grid">
     <header class="app-grid__header">
@@ -14,251 +15,387 @@
       </h1>
     </header>
     <main class="app-grid__main">
-      <section class="quiz-card">
-        <button
-          name="bookmark"
-          type="button"
-          class="quiz-card__bookmark icon-bookmark1"
-          title="Bookmark this Quiz Card"
-        ></button>
-        <details class="quiz-card__details">
-          <summary class="quiz-card__button">
-            <h2 class="quiz-card__headline">
-              Why background and color are the separate properties if they
-              should always be set together?
-            </h2>
-          </summary>
-          <div class="quiz-card__answer">
-            <p>There are two reasons behind this:</p>
-            <ul>
-              <li>
-                It enhances the legibility of style sheets. The background
-                property is a complex property in CSS, and if it is combined
-                with color, the complexity will further increase.
-              </li>
-              <li>
-                Color is an inherited property while the background is not. So
-                this can make confusion further.
-              </li>
-            </ul>
-          </div>
-        </details>
-        <ul class="badge-group margin-top padding-top border-top">
-          <li class="badge-group__badge">CSS</li>
-          <li class="badge-group__badge">Beginner</li>
-          <li class="badge-group__badge">Background</li>
-        </ul>
+      <section class="home section-grid" data-js="home">
+        <section class="quiz-card">
+          <button
+            name="bookmark"
+            type="button"
+            class="quiz-card__bookmark icon-bookmark1"
+            title="Bookmark this Quiz Card"
+          ></button>
+          <details class="quiz-card__details">
+            <summary class="quiz-card__button">
+              <h2 class="quiz-card__headline">
+                Why background and color are the separate properties if they
+                should always be set together?
+              </h2>
+            </summary>
+            <div class="quiz-card__answer">
+              <p>There are two reasons behind this:</p>
+              <ul>
+                <li>
+                  It enhances the legibility of style sheets. The background
+                  property is a complex property in CSS, and if it is combined
+                  with color, the complexity will further increase.
+                </li>
+                <li>
+                  Color is an inherited property while the background is not. So
+                  this can make confusion further.
+                </li>
+              </ul>
+            </div>
+          </details>
+          <ul class="badge-group margin-top padding-top border-top">
+            <li class="badge-group__badge">CSS</li>
+            <li class="badge-group__badge">Beginner</li>
+            <li class="badge-group__badge">Background</li>
+          </ul>
+        </section>
+        <section class="quiz-card">
+          <button
+            name="bookmark"
+            type="button"
+            class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
+            title="Bookmark this Quiz Card"
+          ></button>
+          <details class="quiz-card__details">
+            <summary class="quiz-card__button">
+              <h2 class="quiz-card__headline">What is CSS?</h2>
+            </summary>
+            <p class="quiz-card__answer">
+              CSS stands for Cascading Style Sheets. It is a style sheet
+              language which is used to describe the look and formatting of a
+              document written in markup language. It provides an additional
+              feature to HTML. It is generally used with HTML to change the
+              style of web pages and user interfaces. It can also be used with
+              any kind of XML documents including plain XML, SVG and XUL. CSS is
+              used along with HTML and JavaScript in most websites to create
+              user interfaces for web applications and user interfaces for many
+              mobile applications.
+            </p>
+          </details>
+          <ul class="badge-group margin-top padding-top border-top">
+            <li class="badge-group__badge">Background</li>
+            <li class="badge-group__badge">CSS</li>
+            <li class="badge-group__badge">Beginner</li>
+            <li class="badge-group__badge">Intro</li>
+            <li class="badge-group__badge">Basics</li>
+          </ul>
+        </section>
+        <section class="quiz-card">
+          <button
+            name="bookmark"
+            type="button"
+            class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
+            title="Bookmark this Quiz Card"
+          ></button>
+          <details class="quiz-card__details">
+            <summary class="quiz-card__button">
+              <h2 class="quiz-card__headline">
+                How can you integrate CSS on a web page?
+              </h2>
+            </summary>
+            <div class="quiz-card__answer">
+              <p>There are three methods to integrate CSS on web pages.</p>
+              <ol class="points">
+                <li>
+                  Inline method - It is used to insert style sheets in HTML
+                  document
+                </li>
+                <li>
+                  Embedded/Internal method - It is used to add a unique style to
+                  a single document
+                </li>
+                <li>
+                  Linked/Imported/External method - It is used when you want to
+                  make changes on multiple pages.
+                </li>
+              </ol>
+            </div>
+          </details>
+          <ul class="badge-group margin-top padding-top border-top">
+            <li class="badge-group__badge">Lorem</li>
+            <li class="badge-group__badge">Ipsum</li>
+            <li class="badge-group__badge">Lalila</li>
+            <li class="badge-group__badge">Dummdidumm</li>
+            <li class="badge-group__badge">Another Badge</li>
+            <li class="badge-group__badge">Fun with badges</li>
+            <li class="badge-group__badge">Maybe another one</li>
+            <li class="badge-group__badge">What's for lunch?</li>
+            <li class="badge-group__badge">Are we there yet?</li>
+          </ul>
+        </section>
+        <section class="quiz-card">
+          <button
+            name="bookmark"
+            type="button"
+            class="quiz-card__bookmark icon-bookmark1"
+            title="Bookmark this Quiz Card"
+          ></button>
+          <details class="quiz-card__details">
+            <summary class="quiz-card__button">
+              <h2 class="quiz-card__headline">
+                Why background and color are the separate properties if they
+                should always be set together?
+              </h2>
+            </summary>
+            <div class="quiz-card__answer">
+              <p>There are two reasons behind this:</p>
+              <ul>
+                <li>
+                  It enhances the legibility of style sheets. The background
+                  property is a complex property in CSS, and if it is combined
+                  with color, the complexity will further increase.
+                </li>
+                <li>
+                  Color is an inherited property while the background is not. So
+                  this can make confusion further.
+                </li>
+              </ul>
+            </div>
+          </details>
+          <ul class="badge-group margin-top padding-top border-top">
+            <li class="badge-group__badge">CSS</li>
+            <li class="badge-group__badge">Beginner</li>
+            <li class="badge-group__badge">background</li>
+            <li class="badge-group__badge">CSS</li>
+            <li class="badge-group__badge">Beginner</li>
+            <li class="badge-group__badge">background</li>
+            <li class="badge-group__badge">CSS</li>
+            <li class="badge-group__badge">Beginner</li>
+            <li class="badge-group__badge">background</li>
+          </ul>
+        </section>
+        <section class="quiz-card">
+          <button
+            name="bookmark"
+            type="button"
+            class="quiz-card__bookmark icon-bookmark1"
+            title="Bookmark this Quiz Card"
+          ></button>
+          <details class="quiz-card__details">
+            <summary class="quiz-card__button">
+              <h2 class="quiz-card__headline">What is CSS?</h2>
+            </summary>
+            <p class="quiz-card__answer">
+              CSS stands for Cascading Style Sheets. It is a style sheet
+              language which is used to describe the look and formatting of a
+              document written in markup language. It provides an additional
+              feature to HTML. It is generally used with HTML to change the
+              style of web pages and user interfaces. It can also be used with
+              any kind of XML documents including plain XML, SVG and XUL. CSS is
+              used along with HTML and JavaScript in most websites to create
+              user interfaces for web applications and user interfaces for many
+              mobile applications.
+            </p>
+          </details>
+          <ul class="badge-group margin-top padding-top border-top">
+            <li class="badge-group__badge">Background</li>
+            <li class="badge-group__badge">CSS</li>
+            <li class="badge-group__badge">Beginner</li>
+            <li class="badge-group__badge">Intro</li>
+            <li class="badge-group__badge">Basics</li>
+          </ul>
+        </section>
+        <section class="quiz-card">
+          <button
+            name="bookmark"
+            type="button"
+            class="quiz-card__bookmark icon-bookmark1"
+            title="Bookmark this Quiz Card"
+          ></button>
+          <details class="quiz-card__details">
+            <summary class="quiz-card__button">
+              <h2 class="quiz-card__headline">
+                How can you integrate CSS on a web page?
+              </h2>
+            </summary>
+            <div class="quiz-card__answer">
+              <p>There are three methods to integrate CSS on web pages.</p>
+              <ol class="points">
+                <li>
+                  Inline method - It is used to insert style sheets in HTML
+                  document
+                </li>
+                <li>
+                  Embedded/Internal method - It is used to add a unique style to
+                  a single document
+                </li>
+                <li>
+                  Linked/Imported/External method - It is used when you want to
+                  make changes on multiple pages.
+                </li>
+              </ol>
+            </div>
+          </details>
+          <ul class="badge-group margin-top padding-top border-top">
+            <li class="badge-group__badge">Background</li>
+            <li class="badge-group__badge">CSS</li>
+            <li class="badge-group__badge">Beginner</li>
+            <li class="badge-group__badge">Intro</li>
+            <li class="badge-group__badge">Basics</li>
+          </ul>
+        </section>
       </section>
-      <section class="quiz-card">
-        <button
-          name="bookmark"
-          type="button"
-          class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
-          title="Bookmark this Quiz Card"
-        ></button>
-        <details class="quiz-card__details">
-          <summary class="quiz-card__button">
-            <h2 class="quiz-card__headline">What is CSS?</h2>
-          </summary>
-          <p class="quiz-card__answer">
-            CSS stands for Cascading Style Sheets. It is a style sheet language
-            which is used to describe the look and formatting of a document
-            written in markup language. It provides an additional feature to
-            HTML. It is generally used with HTML to change the style of web
-            pages and user interfaces. It can also be used with any kind of XML
-            documents including plain XML, SVG and XUL. CSS is used along with
-            HTML and JavaScript in most websites to create user interfaces for
-            web applications and user interfaces for many mobile applications.
-          </p>
-        </details>
-        <ul class="badge-group margin-top padding-top border-top">
-          <li class="badge-group__badge">Background</li>
-          <li class="badge-group__badge">CSS</li>
-          <li class="badge-group__badge">Beginner</li>
-          <li class="badge-group__badge">Intro</li>
-          <li class="badge-group__badge">Basics</li>
-        </ul>
+      <section hidden class="bookmarks section-grid" data-js="bookmarks">
+        <section class="quiz-card">
+          <button
+            name="bookmark"
+            type="button"
+            class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
+            title="Bookmark this Quiz Card"
+          ></button>
+          <details class="quiz-card__details">
+            <summary class="quiz-card__button">
+              <h2 class="quiz-card__headline">What is CSS?</h2>
+            </summary>
+            <p class="quiz-card__answer">
+              CSS stands for Cascading Style Sheets. It is a style sheet
+              language which is used to describe the look and formatting of a
+              document written in markup language. It provides an additional
+              feature to HTML. It is generally used with HTML to change the
+              style of web pages and user interfaces. It can also be used with
+              any kind of XML documents including plain XML, SVG and XUL. CSS is
+              used along with HTML and JavaScript in most websites to create
+              user interfaces for web applications and user interfaces for many
+              mobile applications.
+            </p>
+          </details>
+          <ul class="badge-group margin-top padding-top border-top">
+            <li class="badge-group__badge">Background</li>
+            <li class="badge-group__badge">CSS</li>
+            <li class="badge-group__badge">Beginner</li>
+            <li class="badge-group__badge">Intro</li>
+            <li class="badge-group__badge">Basics</li>
+          </ul>
+        </section>
+        <section class="quiz-card">
+          <button
+            name="bookmark"
+            type="button"
+            class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
+            title="Bookmark this Quiz Card"
+          ></button>
+          <details class="quiz-card__details">
+            <summary class="quiz-card__button">
+              <h2 class="quiz-card__headline">
+                How can you integrate CSS on a web page?
+              </h2>
+            </summary>
+            <div class="quiz-card__answer">
+              <p>There are three methods to integrate CSS on web pages.</p>
+              <ol class="points">
+                <li>
+                  Inline method - It is used to insert style sheets in HTML
+                  document
+                </li>
+                <li>
+                  Embedded/Internal method - It is used to add a unique style to
+                  a single document
+                </li>
+                <li>
+                  Linked/Imported/External method - It is used when you want to
+                  make changes on multiple pages.
+                </li>
+              </ol>
+            </div>
+          </details>
+          <ul class="badge-group margin-top padding-top border-top">
+            <li class="badge-group__badge">Lorem</li>
+            <li class="badge-group__badge">Ipsum</li>
+            <li class="badge-group__badge">Lalila</li>
+            <li class="badge-group__badge">Dummdidumm</li>
+            <li class="badge-group__badge">Another Badge</li>
+            <li class="badge-group__badge">Fun with badges</li>
+            <li class="badge-group__badge">Maybe another one</li>
+            <li class="badge-group__badge">What's for lunch?</li>
+            <li class="badge-group__badge">Are we there yet?</li>
+          </ul>
+        </section>
       </section>
-      <section class="quiz-card">
-        <button
-          name="bookmark"
-          type="button"
-          class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
-          title="Bookmark this Quiz Card"
-        ></button>
-        <details class="quiz-card__details">
-          <summary class="quiz-card__button">
-            <h2 class="quiz-card__headline">
-              How can you integrate CSS on a web page?
-            </h2>
-          </summary>
-          <div class="quiz-card__answer">
-            <p>There are three methods to integrate CSS on web pages.</p>
-            <ol class="points">
-              <li>
-                Inline method - It is used to insert style sheets in HTML
-                document
-              </li>
-              <li>
-                Embedded/Internal method - It is used to add a unique style to a
-                single document
-              </li>
-              <li>
-                Linked/Imported/External method - It is used when you want to
-                make changes on multiple pages.
-              </li>
-            </ol>
-          </div>
-        </details>
-        <ul class="badge-group margin-top padding-top border-top">
-          <li class="badge-group__badge">Lorem</li>
-          <li class="badge-group__badge">Ipsum</li>
-          <li class="badge-group__badge">Lalila</li>
-          <li class="badge-group__badge">Dummdidumm</li>
-          <li class="badge-group__badge">Another Badge</li>
-          <li class="badge-group__badge">Fun with badges</li>
-          <li class="badge-group__badge">Maybe another one</li>
-          <li class="badge-group__badge">What's for lunch?</li>
-          <li class="badge-group__badge">Are we there yet?</li>
-        </ul>
+      <section hidden class="create-card section-grid" data-js="create-card">
+        <form class="form">
+          <fieldset class="form__fieldset">
+            <div class="margin-top">
+              <label class="form__label" for="textarea-question"
+                >Add question</label
+              >
+              <textarea
+                class="form__textarea"
+                name="textarea"
+                id="textarea-question"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="margin-top">
+              <label class="form__label" for="textarea-answer"
+                >Add answer</label
+              >
+              <textarea
+                class="form__textarea"
+                name="textarea"
+                id="textarea-answer"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="margin-top">
+              <label class="form__label" for="input-tags">Add Tags</label>
+              <input
+                type="text"
+                class="form__input form__input--text"
+                name="text"
+                id="input-tags"
+                placeholder="Separated by commas"
+              />
+            </div>
+            <div class="margin-top">
+              <input
+                type="submit"
+                class="form__submit form__input--text"
+                value="submit"
+              />
+            </div>
+          </fieldset>
+        </form>
       </section>
-      <section class="quiz-card">
-        <button
-          name="bookmark"
-          type="button"
-          class="quiz-card__bookmark icon-bookmark1"
-          title="Bookmark this Quiz Card"
-        ></button>
-        <details class="quiz-card__details">
-          <summary class="quiz-card__button">
-            <h2 class="quiz-card__headline">
-              Why background and color are the separate properties if they
-              should always be set together?
-            </h2>
-          </summary>
-          <div class="quiz-card__answer">
-            <p>There are two reasons behind this:</p>
-            <ul>
-              <li>
-                It enhances the legibility of style sheets. The background
-                property is a complex property in CSS, and if it is combined
-                with color, the complexity will further increase.
-              </li>
-              <li>
-                Color is an inherited property while the background is not. So
-                this can make confusion further.
-              </li>
-            </ul>
-          </div>
-        </details>
-        <ul class="badge-group margin-top padding-top border-top">
-          <li class="badge-group__badge">CSS</li>
-          <li class="badge-group__badge">Beginner</li>
-          <li class="badge-group__badge">background</li>
-          <li class="badge-group__badge">CSS</li>
-          <li class="badge-group__badge">Beginner</li>
-          <li class="badge-group__badge">background</li>
-          <li class="badge-group__badge">CSS</li>
-          <li class="badge-group__badge">Beginner</li>
-          <li class="badge-group__badge">background</li>
-        </ul>
-      </section>
-      <section class="quiz-card">
-        <button
-          name="bookmark"
-          type="button"
-          class="quiz-card__bookmark icon-bookmark1"
-          title="Bookmark this Quiz Card"
-        ></button>
-        <details class="quiz-card__details">
-          <summary class="quiz-card__button">
-            <h2 class="quiz-card__headline">What is CSS?</h2>
-          </summary>
-          <p class="quiz-card__answer">
-            CSS stands for Cascading Style Sheets. It is a style sheet language
-            which is used to describe the look and formatting of a document
-            written in markup language. It provides an additional feature to
-            HTML. It is generally used with HTML to change the style of web
-            pages and user interfaces. It can also be used with any kind of XML
-            documents including plain XML, SVG and XUL. CSS is used along with
-            HTML and JavaScript in most websites to create user interfaces for
-            web applications and user interfaces for many mobile applications.
-          </p>
-        </details>
-        <ul class="badge-group margin-top padding-top border-top">
-          <li class="badge-group__badge">Background</li>
-          <li class="badge-group__badge">CSS</li>
-          <li class="badge-group__badge">Beginner</li>
-          <li class="badge-group__badge">Intro</li>
-          <li class="badge-group__badge">Basics</li>
-        </ul>
-      </section>
-      <section class="quiz-card">
-        <button
-          name="bookmark"
-          type="button"
-          class="quiz-card__bookmark icon-bookmark1"
-          title="Bookmark this Quiz Card"
-        ></button>
-        <details class="quiz-card__details">
-          <summary class="quiz-card__button">
-            <h2 class="quiz-card__headline">
-              How can you integrate CSS on a web page?
-            </h2>
-          </summary>
-          <div class="quiz-card__answer">
-            <p>There are three methods to integrate CSS on web pages.</p>
-            <ol class="points">
-              <li>
-                Inline method - It is used to insert style sheets in HTML
-                document
-              </li>
-              <li>
-                Embedded/Internal method - It is used to add a unique style to a
-                single document
-              </li>
-              <li>
-                Linked/Imported/External method - It is used when you want to
-                make changes on multiple pages.
-              </li>
-            </ol>
-          </div>
-        </details>
-        <ul class="badge-group margin-top padding-top border-top">
-          <li class="badge-group__badge">Background</li>
-          <li class="badge-group__badge">CSS</li>
-          <li class="badge-group__badge">Beginner</li>
-          <li class="badge-group__badge">Intro</li>
-          <li class="badge-group__badge">Basics</li>
-        </ul>
+      <section hidden class="account section-grid" data-js="account">
+        <p>This area is under construction ...</p>
       </section>
     </main>
     <footer class="app-grid__footer">
       <nav class="navigation">
-        <li class="navigation__item navigation__item--active">
-          <a href="index.html" aria-label="Home">
-            <i class="icon-anchor1"></i>
-            <span class="navigation__label">Home</span>
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a href="bookmarks-list.html" aria-label="My Bookmarks">
-            <i class="icon-bookmark-outline"></i>
-            <span class="navigation__label">Bookmarks</span>
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a href="create-card.html" aria-label="Create a Quiz Card">
-            <i class="icon-list-add"></i>
-            <span class="navigation__label">Add Card</span>
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a href="account.html" aria-label="Quiz App Settings & Profile">
-            <i class="icon-user1"></i>
-            <span class="navigation__label">Settings</span>
-          </a>
-        </li>
+        <button
+          class="navigation__item navigation__item--active"
+          aria-label="Home"
+          data-js="nav-btn-1"
+        >
+          <i class="icon-anchor1"></i>
+          <span class="navigation__label">Home</span>
+        </button>
+        <button
+          class="navigation__item"
+          aria-label="My Bookmarks"
+          data-js="nav-btn-2"
+        >
+          <i class="icon-bookmark-outline"></i>
+          <span class="navigation__label">Bookmarks</span>
+        </button>
+        <button
+          class="navigation__item"
+          aria-label="Create a Quiz Card"
+          data-js="nav-btn-3"
+        >
+          <i class="icon-list-add"></i>
+          <span class="navigation__label">Add Card</span>
+        </button>
+        <button
+          class="navigation__item"
+          aria-label="Quiz App Settings & Profile"
+          data-js="nav-btn-4"
+        >
+          <i class="icon-user1"></i>
+          <span class="navigation__label">Settings</span>
+        </button>
       </nav>
     </footer>
   </body>
