@@ -1,8 +1,11 @@
 {
-  "arrowParens": "avoid",
+  "tabWidth": 2,
+  "useTabs": false,
   "semi": false,
   "singleQuote": true,
-  "tabWidth": 2,
   "trailingComma": "es5",
-  "useTabs": false
+  "bracketSpacing": false,
+  "arrowParens": "avoid",
+  "requirePragma": false,
+  "insertPragma": false
 }

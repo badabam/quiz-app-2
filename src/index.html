@@ -18,6 +18,7 @@
       <section class="home section-grid" data-js="home">
         <section class="quiz-card">
           <button
+            data-js="bookmark"
             name="bookmark"
             type="button"
             class="quiz-card__bookmark icon-bookmark1"
@@ -53,6 +54,7 @@
         </section>
         <section class="quiz-card">
           <button
+            data-js="bookmark"
             name="bookmark"
             type="button"
             class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
@@ -84,6 +86,7 @@
         </section>
         <section class="quiz-card">
           <button
+            data-js="bookmark"
             name="bookmark"
             type="button"
             class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
@@ -127,6 +130,7 @@
         </section>
         <section class="quiz-card">
           <button
+            data-js="bookmark"
             name="bookmark"
             type="button"
             class="quiz-card__bookmark icon-bookmark1"
@@ -168,6 +172,7 @@
         </section>
         <section class="quiz-card">
           <button
+            data-js="bookmark"
             name="bookmark"
             type="button"
             class="quiz-card__bookmark icon-bookmark1"
@@ -199,6 +204,7 @@
         </section>
         <section class="quiz-card">
           <button
+            data-js="bookmark"
             name="bookmark"
             type="button"
             class="quiz-card__bookmark icon-bookmark1"
@@ -237,82 +243,11 @@
           </ul>
         </section>
       </section>
-      <section hidden class="bookmarks section-grid" data-js="bookmarks">
-        <section class="quiz-card">
-          <button
-            name="bookmark"
-            type="button"
-            class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
-            title="Bookmark this Quiz Card"
-          ></button>
-          <details class="quiz-card__details">
-            <summary class="quiz-card__button">
-              <h2 class="quiz-card__headline">What is CSS?</h2>
-            </summary>
-            <p class="quiz-card__answer">
-              CSS stands for Cascading Style Sheets. It is a style sheet
-              language which is used to describe the look and formatting of a
-              document written in markup language. It provides an additional
-              feature to HTML. It is generally used with HTML to change the
-              style of web pages and user interfaces. It can also be used with
-              any kind of XML documents including plain XML, SVG and XUL. CSS is
-              used along with HTML and JavaScript in most websites to create
-              user interfaces for web applications and user interfaces for many
-              mobile applications.
-            </p>
-          </details>
-          <ul class="badge-group margin-top padding-top border-top">
-            <li class="badge-group__badge">Background</li>
-            <li class="badge-group__badge">CSS</li>
-            <li class="badge-group__badge">Beginner</li>
-            <li class="badge-group__badge">Intro</li>
-            <li class="badge-group__badge">Basics</li>
-          </ul>
-        </section>
-        <section class="quiz-card">
-          <button
-            name="bookmark"
-            type="button"
-            class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
-            title="Bookmark this Quiz Card"
-          ></button>
-          <details class="quiz-card__details">
-            <summary class="quiz-card__button">
-              <h2 class="quiz-card__headline">
-                How can you integrate CSS on a web page?
-              </h2>
-            </summary>
-            <div class="quiz-card__answer">
-              <p>There are three methods to integrate CSS on web pages.</p>
-              <ol class="points">
-                <li>
-                  Inline method - It is used to insert style sheets in HTML
-                  document
-                </li>
-                <li>
-                  Embedded/Internal method - It is used to add a unique style to
-                  a single document
-                </li>
-                <li>
-                  Linked/Imported/External method - It is used when you want to
-                  make changes on multiple pages.
-                </li>
-              </ol>
-            </div>
-          </details>
-          <ul class="badge-group margin-top padding-top border-top">
-            <li class="badge-group__badge">Lorem</li>
-            <li class="badge-group__badge">Ipsum</li>
-            <li class="badge-group__badge">Lalila</li>
-            <li class="badge-group__badge">Dummdidumm</li>
-            <li class="badge-group__badge">Another Badge</li>
-            <li class="badge-group__badge">Fun with badges</li>
-            <li class="badge-group__badge">Maybe another one</li>
-            <li class="badge-group__badge">What's for lunch?</li>
-            <li class="badge-group__badge">Are we there yet?</li>
-          </ul>
-        </section>
-      </section>
+      <section
+        hidden
+        class="bookmarks section-grid"
+        data-js="bookmarks"
+      ></section>
       <section hidden class="create-card section-grid" data-js="create-card">
         <form class="form">
           <fieldset class="form__fieldset">
