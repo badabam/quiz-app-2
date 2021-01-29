@@ -16,15 +16,10 @@
   transition: all 0.3s ease-out;
 }
 
-.quiz-card__bookmark.quiz-card__bookmark--active,
+.quiz-card__bookmark--active,
 .quiz-card__bookmark:hover {
   color: var(--color-sky-blue1);
   transition: all 0.3s ease-out;
-}
-
-.quiz-card__details {
-  position: relative;
-  padding-bottom: var(--space-medium);
 }
 
 .quiz-card__headline {
@@ -33,18 +28,6 @@
 }
 
 .quiz-card__button {
-  display: inline-block;
-  outline: none;
-  list-style: none;
-}
-.quiz-card__button::-webkit-details-marker {
-  display: none;
-}
-
-.quiz-card__button::after {
-  position: absolute;
-  bottom: 0;
-  content: 'show answer';
   cursor: pointer;
   padding: 3px var(--space-small);
   border: 1px solid var(--color-eerie-black);
@@ -56,18 +39,43 @@
   transition: all 0.3s ease-out;
 }
 
-.quiz-card__details[open] .quiz-card__button::after {
-  content: 'hide answer';
-}
-
-.quiz-card__details[open] .quiz-card__button::after,
-.quiz-card__details:hover .quiz-card__button::after {
+.quiz-card__button--active,
+.quiz-card__button:hover {
   background: var(--color-eerie-black);
-  color: var(--color-sky-blue1);
   color: var(--color-azure);
   transition: all 0.3s ease-out;
 }
 
 .quiz-card__answer {
-  padding-bottom: var(--space-medium);
+  -webkit-transition: max-height 1s ease-out;
+  -moz-transition: max-height 1s ease-out;
+  -ms-transition: max-height 1s ease-out;
+  -o-transition: max-height 1s ease-out;
+  transition: max-height 1s ease-out;
+  max-height: 999px;
+}
+
+.quiz-card__answer.hidden {
+  -webkit-transition: max-height 1s ease-out;
+  -moz-transition: max-height 1s ease-out;
+  -ms-transition: max-height 1s ease-out;
+  -o-transition: max-height 1s ease-out;
+  transition: max-height 1s ease-out;
+  overflow: hidden;
+  max-height: 0;
+}
+
+.bookmark-badge {
+  position: relative;
+  padding: 0 15px 0 3px;
+  margin-right: 5px;
+  border: 1px solid var(--color-eerie-black);
+  border-radius: 3px;
+}
+
+.bookmark-badge__icon {
+  position: absolute;
+  top: -4px;
+  right: 1px;
+  color: var(--color-sky-blue1);
 }

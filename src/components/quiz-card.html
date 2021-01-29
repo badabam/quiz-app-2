@@ -1,15 +1,14 @@
 <section class="quiz-card">
   <button
     data-js="bookmark"
+    name="bookmark"
     type="button"
     class="quiz-card__bookmark icon-bookmark1"
     title="Bookmark this Quiz Card"
   ></button>
-  <details class="quiz-card__details">
-    <summary class="quiz-card__button">
-      <h3 class="quiz-card__headline">What is CSS?</h3>
-    </summary>
-    <p class="quiz-card__answer">
+  <h2 class="quiz-card__headline">What is CSS?</h2>
+  <div class="quiz-card__answer" data-js="answer">
+    <p>
       CSS stands for Cascading Style Sheets. It is a style sheet language which
       is used to describe the look and formatting of a document written in
       markup language. It provides an additional feature to HTML. It is
@@ -19,27 +18,35 @@
       websites to create user interfaces for web applications and user
       interfaces for many mobile applications.
     </p>
-  </details>
-  <div class="badge-group margin-top padding-top border-top">
-    <span class="badge-group__badge">Default</span>
-    <span class="badge-group__badge">CSS</span>
-    <span class="badge-group__badge">Beginner</span>
-    <span class="badge-group__badge">Intro</span>
-    <span class="badge-group__badge">Basics</span>
   </div>
+  <button
+    data-js="toggle-answer"
+    name="toggle-answer"
+    type="button"
+    class="quiz-card__button"
+  >
+    Show answer
+  </button>
+  <ul class="badge-group margin-top padding-top border-top">
+    <li class="badge-group__badge">Background</li>
+    <li class="badge-group__badge">CSS</li>
+    <li class="badge-group__badge">Beginner</li>
+    <li class="badge-group__badge">Intro</li>
+    <li class="badge-group__badge">Basics</li>
+  </ul>
 </section>
 
 <section class="quiz-card">
-  <a
-    href="#"
+  <button
+    data-js="bookmark"
+    name="bookmark"
+    type="button"
     class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
     title="Bookmark this Quiz Card"
-  ></a>
-  <details class="quiz-card__details">
-    <summary class="quiz-card__button">
-      <h3 class="quiz-card__headline">What is CSS?</h3>
-    </summary>
-    <p class="quiz-card__answer">
+  ></button>
+  <h2 class="quiz-card__headline">What is CSS?</h2>
+  <div class="quiz-card__answer" data-js="answer">
+    <p>
       CSS stands for Cascading Style Sheets. It is a style sheet language which
       is used to describe the look and formatting of a document written in
       markup language. It provides an additional feature to HTML. It is
@@ -49,12 +56,20 @@
       websites to create user interfaces for web applications and user
       interfaces for many mobile applications.
     </p>
-  </details>
-  <div class="badge-group margin-top padding-top border-top">
-    <span class="badge-group__badge">Bookmarked</span>
-    <span class="badge-group__badge">CSS</span>
-    <span class="badge-group__badge">Beginner</span>
-    <span class="badge-group__badge">Intro</span>
-    <span class="badge-group__badge">Basics</span>
   </div>
+  <button
+    data-js="toggle-answer"
+    name="toggle-answer"
+    type="button"
+    class="quiz-card__button"
+  >
+    Show answer
+  </button>
+  <ul class="badge-group margin-top padding-top border-top">
+    <li class="badge-group__badge">Background</li>
+    <li class="badge-group__badge">CSS</li>
+    <li class="badge-group__badge">Beginner</li>
+    <li class="badge-group__badge">Intro</li>
+    <li class="badge-group__badge">Basics</li>
+  </ul>
 </section>

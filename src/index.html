@@ -16,7 +16,7 @@
     </header>
     <main class="app-grid__main">
       <section class="home section-grid" data-js="home">
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -24,35 +24,39 @@
             class="quiz-card__bookmark icon-bookmark1"
             title="Bookmark this Quiz Card"
           ></button>
-          <details class="quiz-card__details">
-            <summary class="quiz-card__button">
-              <h2 class="quiz-card__headline">
-                Why background and color are the separate properties if they
-                should always be set together?
-              </h2>
-            </summary>
-            <div class="quiz-card__answer">
-              <p>There are two reasons behind this:</p>
-              <ul>
-                <li>
-                  It enhances the legibility of style sheets. The background
-                  property is a complex property in CSS, and if it is combined
-                  with color, the complexity will further increase.
-                </li>
-                <li>
-                  Color is an inherited property while the background is not. So
-                  this can make confusion further.
-                </li>
-              </ul>
-            </div>
-          </details>
+          <h2 class="quiz-card__headline">
+            Why background and color are the separate properties if they should
+            always be set together?
+          </h2>
+          <div class="quiz-card__answer hidden" data-js="answer">
+            <p>There are two reasons behind this:</p>
+            <ul>
+              <li>
+                It enhances the legibility of style sheets. The background
+                property is a complex property in CSS, and if it is combined
+                with color, the complexity will further increase.
+              </li>
+              <li>
+                Color is an inherited property while the background is not. So
+                this can make confusion further.
+              </li>
+            </ul>
+          </div>
+          <button
+            data-js="toggle-answer"
+            name="toggle-answer"
+            type="button"
+            class="quiz-card__button"
+          >
+            Show answer
+          </button>
           <ul class="badge-group margin-top padding-top border-top">
             <li class="badge-group__badge">CSS</li>
             <li class="badge-group__badge">Beginner</li>
             <li class="badge-group__badge">Background</li>
           </ul>
         </section>
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -60,11 +64,9 @@
             class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
             title="Bookmark this Quiz Card"
           ></button>
-          <details class="quiz-card__details">
-            <summary class="quiz-card__button">
-              <h2 class="quiz-card__headline">What is CSS?</h2>
-            </summary>
-            <p class="quiz-card__answer">
+          <h2 class="quiz-card__headline">What is CSS?</h2>
+          <div class="quiz-card__answer hidden" data-js="answer">
+            <p>
               CSS stands for Cascading Style Sheets. It is a style sheet
               language which is used to describe the look and formatting of a
               document written in markup language. It provides an additional
@@ -75,7 +77,15 @@
               user interfaces for web applications and user interfaces for many
               mobile applications.
             </p>
-          </details>
+          </div>
+          <button
+            data-js="toggle-answer"
+            name="toggle-answer"
+            type="button"
+            class="quiz-card__button"
+          >
+            Show answer
+          </button>
           <ul class="badge-group margin-top padding-top border-top">
             <li class="badge-group__badge">Background</li>
             <li class="badge-group__badge">CSS</li>
@@ -84,7 +94,7 @@
             <li class="badge-group__badge">Basics</li>
           </ul>
         </section>
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -92,30 +102,34 @@
             class="quiz-card__bookmark quiz-card__bookmark--active icon-bookmark1"
             title="Bookmark this Quiz Card"
           ></button>
-          <details class="quiz-card__details">
-            <summary class="quiz-card__button">
-              <h2 class="quiz-card__headline">
-                How can you integrate CSS on a web page?
-              </h2>
-            </summary>
-            <div class="quiz-card__answer">
-              <p>There are three methods to integrate CSS on web pages.</p>
-              <ol class="points">
-                <li>
-                  Inline method - It is used to insert style sheets in HTML
-                  document
-                </li>
-                <li>
-                  Embedded/Internal method - It is used to add a unique style to
-                  a single document
-                </li>
-                <li>
-                  Linked/Imported/External method - It is used when you want to
-                  make changes on multiple pages.
-                </li>
-              </ol>
-            </div>
-          </details>
+          <h2 class="quiz-card__headline">
+            How can you integrate CSS on a web page?
+          </h2>
+          <div class="quiz-card__answer hidden" data-js="answer">
+            <p>There are three methods to integrate CSS on web pages.</p>
+            <ol class="points">
+              <li>
+                Inline method - It is used to insert style sheets in HTML
+                document
+              </li>
+              <li>
+                Embedded/Internal method - It is used to add a unique style to a
+                single document
+              </li>
+              <li>
+                Linked/Imported/External method - It is used when you want to
+                make changes on multiple pages.
+              </li>
+            </ol>
+          </div>
+          <button
+            data-js="toggle-answer"
+            name="toggle-answer"
+            type="button"
+            class="quiz-card__button"
+          >
+            Show answer
+          </button>
           <ul class="badge-group margin-top padding-top border-top">
             <li class="badge-group__badge">Lorem</li>
             <li class="badge-group__badge">Ipsum</li>
@@ -128,7 +142,7 @@
             <li class="badge-group__badge">Are we there yet?</li>
           </ul>
         </section>
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -136,28 +150,32 @@
             class="quiz-card__bookmark icon-bookmark1"
             title="Bookmark this Quiz Card"
           ></button>
-          <details class="quiz-card__details">
-            <summary class="quiz-card__button">
-              <h2 class="quiz-card__headline">
-                Why background and color are the separate properties if they
-                should always be set together?
-              </h2>
-            </summary>
-            <div class="quiz-card__answer">
-              <p>There are two reasons behind this:</p>
-              <ul>
-                <li>
-                  It enhances the legibility of style sheets. The background
-                  property is a complex property in CSS, and if it is combined
-                  with color, the complexity will further increase.
-                </li>
-                <li>
-                  Color is an inherited property while the background is not. So
-                  this can make confusion further.
-                </li>
-              </ul>
-            </div>
-          </details>
+          <h2 class="quiz-card__headline">
+            Why background and color are the separate properties if they should
+            always be set together?
+          </h2>
+          <div class="quiz-card__answer hidden" data-js="answer">
+            <p>There are two reasons behind this:</p>
+            <ul>
+              <li>
+                It enhances the legibility of style sheets. The background
+                property is a complex property in CSS, and if it is combined
+                with color, the complexity will further increase.
+              </li>
+              <li>
+                Color is an inherited property while the background is not. So
+                this can make confusion further.
+              </li>
+            </ul>
+          </div>
+          <button
+            data-js="toggle-answer"
+            name="toggle-answer"
+            type="button"
+            class="quiz-card__button"
+          >
+            Show answer
+          </button>
           <ul class="badge-group margin-top padding-top border-top">
             <li class="badge-group__badge">CSS</li>
             <li class="badge-group__badge">Beginner</li>
@@ -170,7 +188,7 @@
             <li class="badge-group__badge">background</li>
           </ul>
         </section>
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -178,11 +196,9 @@
             class="quiz-card__bookmark icon-bookmark1"
             title="Bookmark this Quiz Card"
           ></button>
-          <details class="quiz-card__details">
-            <summary class="quiz-card__button">
-              <h2 class="quiz-card__headline">What is CSS?</h2>
-            </summary>
-            <p class="quiz-card__answer">
+          <h2 class="quiz-card__headline">What is CSS?</h2>
+          <div class="quiz-card__answer hidden" data-js="answer">
+            <p>
               CSS stands for Cascading Style Sheets. It is a style sheet
               language which is used to describe the look and formatting of a
               document written in markup language. It provides an additional
@@ -193,7 +209,15 @@
               user interfaces for web applications and user interfaces for many
               mobile applications.
             </p>
-          </details>
+          </div>
+          <button
+            data-js="toggle-answer"
+            name="toggle-answer"
+            type="button"
+            class="quiz-card__button"
+          >
+            Show answer
+          </button>
           <ul class="badge-group margin-top padding-top border-top">
             <li class="badge-group__badge">Background</li>
             <li class="badge-group__badge">CSS</li>
@@ -202,7 +226,7 @@
             <li class="badge-group__badge">Basics</li>
           </ul>
         </section>
-        <section class="quiz-card">
+        <section class="quiz-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -210,30 +234,34 @@
             class="quiz-card__bookmark icon-bookmark1"
             title="Bookmark this Quiz Card"
           ></button>
-          <details class="quiz-card__details">
-            <summary class="quiz-card__button">
-              <h2 class="quiz-card__headline">
-                How can you integrate CSS on a web page?
-              </h2>
-            </summary>
-            <div class="quiz-card__answer">
-              <p>There are three methods to integrate CSS on web pages.</p>
-              <ol class="points">
-                <li>
-                  Inline method - It is used to insert style sheets in HTML
-                  document
-                </li>
-                <li>
-                  Embedded/Internal method - It is used to add a unique style to
-                  a single document
-                </li>
-                <li>
-                  Linked/Imported/External method - It is used when you want to
-                  make changes on multiple pages.
-                </li>
-              </ol>
-            </div>
-          </details>
+          <h2 class="quiz-card__headline">
+            How can you integrate CSS on a web page?
+          </h2>
+          <div class="quiz-card__answer hidden" data-js="answer">
+            <p>There are three methods to integrate CSS on web pages.</p>
+            <ol class="points">
+              <li>
+                Inline method - It is used to insert style sheets in HTML
+                document
+              </li>
+              <li>
+                Embedded/Internal method - It is used to add a unique style to a
+                single document
+              </li>
+              <li>
+                Linked/Imported/External method - It is used when you want to
+                make changes on multiple pages.
+              </li>
+            </ol>
+          </div>
+          <button
+            data-js="toggle-answer"
+            name="toggle-answer"
+            type="button"
+            class="quiz-card__button"
+          >
+            Show answer
+          </button>
           <ul class="badge-group margin-top padding-top border-top">
             <li class="badge-group__badge">Background</li>
             <li class="badge-group__badge">CSS</li>

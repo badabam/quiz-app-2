@@ -53,3 +53,7 @@
 .padding-right {
   padding-right: var(--space-medium) !important;
 }
+
+.hidden {
+  display: none !important;
+}
