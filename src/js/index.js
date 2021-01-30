@@ -11,6 +11,12 @@ const navButton4 = getElement('nav-btn-4')
 toggleBookmark()
 toggleAnswer()
 
+const form = getElement('form-card-create')
+form.addEventListener('submit', event => {
+  event.preventDefault()
+  form.reset()
+})
+
 navButton1.addEventListener('click', () => {
   pageHome.hidden = false
   pageBookmark.hidden = true
@@ -20,7 +26,6 @@ navButton1.addEventListener('click', () => {
   navButton2.classList.remove('navigation__item--active')
   navButton3.classList.remove('navigation__item--active')
   navButton4.classList.remove('navigation__item--active')
-  //bookmarks = getAllElements('bookmark')
   toggleBookmark()
   toggleAnswer()
 })
@@ -35,7 +40,6 @@ navButton2.addEventListener('click', () => {
   navButton3.classList.remove('navigation__item--active')
   navButton4.classList.remove('navigation__item--active')
   cloneQuizCard()
-  //bookmarks = getAllElements('bookmark')
   toggleBookmark()
   toggleAnswer()
 })
@@ -49,8 +53,8 @@ navButton3.addEventListener('click', () => {
   navButton2.classList.remove('navigation__item--active')
   navButton3.classList.add('navigation__item--active')
   navButton4.classList.remove('navigation__item--active')
-  bookmarks = getAllElements('bookmark')
   toggleBookmark()
+  formFunctions()
 })
 
 navButton4.addEventListener('click', () => {
@@ -62,7 +66,6 @@ navButton4.addEventListener('click', () => {
   navButton2.classList.remove('navigation__item--active')
   navButton3.classList.remove('navigation__item--active')
   navButton4.classList.add('navigation__item--active')
-  bookmarks = getAllElements('bookmark')
   toggleBookmark()
 })
 
@@ -102,8 +105,34 @@ function cloneQuizCard() {
       pageBookmark.append(bookmarkActive.parentNode.cloneNode(true))
     })
   } else {
-    pageBookmark.innerHTML = `<section class="quiz-card quiz-card--empty"><h2><i class="icon-mood-neutral-outline"></i> What a pity!</h2><p>Looks like you haven't <span class="bookmark-badge">bookmarked <i class="icon-bookmark1 bookmark-badge__icon"></i></span> any Quiz Cards yet ...</p></section>`
+    pageBookmark.innerHTML = `<section class="quiz-card quiz-card--empty">
+    <h2><i class="icon-mood-neutral-outline"></i> What a pity!</h2>
+    <p>
+    Looks like you haven't <span class="bookmark-badge">bookmarked <i class="icon-bookmark1 bookmark-badge__icon"></i></span> any Quiz Cards yet ...
+    </p>
+    </section>`
   }
+}
+function formFunctions() {
+  const addQuestion = document.querySelector('.form__textarea--question')
+  const formFields = getAllElements('form-field')
+
+  addQuestion.focus()
+
+  formFields.forEach(field => {
+    const countMax = field.maxLength
+    const counterEl = document.createElement('span')
+    counterEl.className = 'form__counter-indicator'
+    counterEl.innerHTML = `${countMax}`
+    const charCounter = field.parentElement.appendChild(counterEl)
+
+    field.addEventListener('input', () => {
+      const countInput = field.value.length
+      const countRest = countMax - countInput
+      console.log(countRest)
+      counterEl.innerHTML = `<strong>${countRest}</strong> / ${countMax}`
+    })
+  })
 }
 
 function getElement(dataJsName) {

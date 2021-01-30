@@ -57,3 +57,8 @@
 .hidden {
   display: none !important;
 }
+.shadow-card {
+  background: #fff;
+  padding: var(--space-medium);
+  box-shadow: 0 0 5px #00000015;
+}

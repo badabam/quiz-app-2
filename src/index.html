@@ -16,7 +16,7 @@
     </header>
     <main class="app-grid__main">
       <section class="home section-grid" data-js="home">
-        <section class="quiz-card" data-js="quiz-card">
+        <section class="quiz-card shadow-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -56,7 +56,7 @@
             <li class="badge-group__badge">Background</li>
           </ul>
         </section>
-        <section class="quiz-card" data-js="quiz-card">
+        <section class="quiz-card shadow-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -94,7 +94,7 @@
             <li class="badge-group__badge">Basics</li>
           </ul>
         </section>
-        <section class="quiz-card" data-js="quiz-card">
+        <section class="quiz-card shadow-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -142,7 +142,7 @@
             <li class="badge-group__badge">Are we there yet?</li>
           </ul>
         </section>
-        <section class="quiz-card" data-js="quiz-card">
+        <section class="quiz-card shadow-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -188,7 +188,7 @@
             <li class="badge-group__badge">background</li>
           </ul>
         </section>
-        <section class="quiz-card" data-js="quiz-card">
+        <section class="quiz-card shadow-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -226,7 +226,7 @@
             <li class="badge-group__badge">Basics</li>
           </ul>
         </section>
-        <section class="quiz-card" data-js="quiz-card">
+        <section class="quiz-card shadow-card" data-js="quiz-card">
           <button
             data-js="bookmark"
             name="bookmark"
@@ -277,33 +277,40 @@
         data-js="bookmarks"
       ></section>
       <section hidden class="create-card section-grid" data-js="create-card">
-        <form class="form">
+        <form class="form" data-js="form-card-create">
           <fieldset class="form__fieldset">
-            <div class="margin-top">
+            <div class="form_fielwrap">
               <label class="form__label" for="textarea-question"
                 >Add question</label
               >
               <textarea
-                class="form__textarea"
+                data-js="form-field"
+                maxlength="100"
+                class="form__textarea form__textarea--question"
                 name="textarea"
                 id="textarea-question"
                 rows="3"
               ></textarea>
             </div>
-            <div class="margin-top">
+            <div class="form_fielwrap margin-top">
               <label class="form__label" for="textarea-answer"
                 >Add answer</label
               >
               <textarea
-                class="form__textarea"
+                data-js="form-field"
+                maxlength="300"
+                class="form__textarea form__textarea--answer"
                 name="textarea"
                 id="textarea-answer"
-                rows="10"
+                rows="8"
               ></textarea>
             </div>
-            <div class="margin-top">
+            <div class="form_fielwrap margin-top">
               <label class="form__label" for="input-tags">Add Tags</label>
               <input
+                data-js="form-field"
+                s
+                maxlength="70"
                 type="text"
                 class="form__input form__input--text"
                 name="text"
@@ -311,13 +318,9 @@
                 placeholder="Separated by commas"
               />
             </div>
-            <div class="margin-top">
-              <input
-                type="submit"
-                class="form__submit form__input--text"
-                value="submit"
-              />
-            </div>
+            <button type="submit" class="form__submit margin-top">
+              Submit
+            </button>
           </fieldset>
         </form>
       </section>

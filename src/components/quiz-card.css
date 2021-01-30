@@ -1,9 +1,7 @@
 .quiz-card {
   position: relative;
-  background: #fff;
-  padding: var(--space-medium);
-  box-shadow: 0 0 5px #00000015;
   display: grid;
+  justify-items: center;
 }
 
 .quiz-card__bookmark {
@@ -53,6 +51,7 @@
   -o-transition: max-height 1s ease-out;
   transition: max-height 1s ease-out;
   max-height: 999px;
+  font-size: 0.9em;
 }
 
 .quiz-card__answer.hidden {

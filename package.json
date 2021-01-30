@@ -38,5 +38,7 @@
     "stylelint-config-prettier": "^8.0.2",
     "stylelint-config-standard": "^20.0.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "npm": "^6.14.11"
+  }
 }

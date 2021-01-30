@@ -4,6 +4,11 @@
 [hidden] {
   display: none !important;
 }
+::selection {
+  background: var(--color-sky-blue1);
+  color: var(--color-azure);
+  text-shadow: none;
+}
 body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 112.5%;
