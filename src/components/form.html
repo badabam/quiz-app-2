@@ -1,6 +1,20 @@
-<form class="form">
+<form class="form" data-js="form-card-create">
   <fieldset class="form__fieldset">
-    <div class="margin-top">
+    <div class="form__fieldwrap">
+      <label class="form__label" for="input-tags">Text input after label</label>
+      <input
+        data-js="form-field"
+        s
+        maxlength="70"
+        type="text"
+        class="form__input form__input--text"
+        name="text"
+        id="input-tags"
+        placeholder="Type something"
+      />
+    </div>
+
+    <div class="form__fieldwrap margin-top">
       <label class="form__label"
         >Text input in label
         <input
@@ -10,25 +24,27 @@
           id="input-text"
       /></label>
     </div>
-    <div class="margin-top">
-      <label class="form__label" for="input-text2"
-        >Text input after label</label
-      >
+    <div class="form__fieldwrap margin-top">
       <input
         type="text"
         class="form__input form__input--text"
         name="text"
-        id="input-text2"
+        id="input-text3"
+        placeholder="Text input without label"
       />
     </div>
-    <input
-      type="text"
-      class="form__input form__input--text"
-      name="text"
-      id="input-text3"
-      placeholder="Text input without label"
-    />
-    <div class="margin-top">
+    <div class="form__fieldwrap margin-top">
+      <label class="form__label" for="textarea-question">Textarea</label>
+      <textarea
+        data-js="form-field"
+        maxlength="100"
+        class="form__textarea form__textarea--question"
+        name="textarea"
+        id="textarea-question"
+        rows="3"
+      ></textarea>
+    </div>
+    <div class="form__fieldwrap margin-top">
       <label class="form__label"
         >Radio button A
         <input
@@ -46,7 +62,7 @@
           id="radio-button"
       /></label>
     </div>
-    <div class="margin-top">
+    <div class="form__fieldwrap margin-top">
       <label class="form__label"
         >Checkbox A
         <input
@@ -64,24 +80,13 @@
           id="checkbox"
       /></label>
     </div>
-    <div class="margin-top">
-      <label class="form__label" for="textarea-dummy">Textarea label:</label>
-      <textarea
-        class="form__textarea"
-        name="textarea"
-        id="textarea-dummy"
-        cols="30"
-        rows="10"
-      >
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor?
-      </textarea>
-    </div>
-    <div class="margin-top">
+    <div class="form__fieldwrap margin-top">
       <label class="form__label" for="textarea-dummy">Select option:</label>
       <select class="form__select">
         <option>Option 01</option>
         <option>Option 02</option>
       </select>
     </div>
+    <button type="submit" class="form__submit margin-top">Submit</button>
   </fieldset>
 </form>

@@ -1,5 +1,4 @@
-[class^='form__']:not([type='submit']) {
-  width: 100%;
+[class^='form__'] {
   font-family: inherit;
   outline: none;
 }
@@ -14,6 +13,7 @@
 .form__fieldwrap {
   position: relative;
   width: 100%;
+  max-width: 500px;
 }
 
 .form__label {
@@ -22,25 +22,31 @@
   font-weight: 600;
 }
 
-.form__input,
+/* .form__input, */
 .form__input--text,
-.form__textarea {
+.form__textarea,
+.form__select {
   border: 1px solid var(--color-lightjet);
   border-radius: 5px;
   padding: 10px;
   vertical-align: top;
   font-size: 0.9em;
+  width: 100%;
 }
 
 .form__input::placeholder {
   color: #999;
 }
 
-.form__input--radio,
-.form__input--check {
+.form__input,
+.form__select:not([multiple]):not([size]) {
+  height: 40px;
+}
+.form__input.form__input--radio,
+.form__input.form__input--check {
   display: inline-block;
-  height: 16px;
-  width: 16px;
+  height: 25px;
+  width: 25px;
   overflow: hidden;
   margin-top: -4px;
   vertical-align: middle;
@@ -73,11 +79,6 @@
   background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A');
   background-repeat: no-repeat;
   background-position: 100% 50%;
-}
-
-.form__input,
-.form__select:not([multiple]):not([size]) {
-  height: 40px;
 }
 
 .form__submit {
