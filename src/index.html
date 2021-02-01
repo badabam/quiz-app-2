@@ -15,7 +15,7 @@
       </h1>
     </header>
     <main class="app-grid__main">
-      <section class="home section-grid" data-js="home">
+      <section class="home section-grid" data-js="page" data-name="home">
         <section class="quiz-card shadow-card" data-js="quiz-card">
           <button
             data-js="bookmark"
@@ -272,14 +272,18 @@
         </section>
       </section>
       <section
-        hidden
-        class="bookmarks section-grid"
-        data-js="bookmarks"
+        class="bookmarks section-grid hidden"
+        data-js="page"
+        data-name="bookmarks"
       ></section>
-      <section hidden class="create-card section-grid" data-js="create-card">
+      <section
+        class="create-card section-grid hidden"
+        data-js="page"
+        data-name="create-card"
+      >
         <form class="form" data-js="form-card-create">
           <fieldset class="form__fieldset">
-            <div class="form_fielwrap">
+            <div class="form__fieldwrap">
               <label class="form__label" for="textarea-question"
                 >Add question</label
               >
@@ -292,7 +296,7 @@
                 rows="3"
               ></textarea>
             </div>
-            <div class="form_fielwrap margin-top">
+            <div class="form__fieldwrap margin-top">
               <label class="form__label" for="textarea-answer"
                 >Add answer</label
               >
@@ -305,7 +309,7 @@
                 rows="8"
               ></textarea>
             </div>
-            <div class="form_fielwrap margin-top">
+            <div class="form__fieldwrap margin-top">
               <label class="form__label" for="input-tags">Add Tags</label>
               <input
                 data-js="form-field"
@@ -324,8 +328,28 @@
           </fieldset>
         </form>
       </section>
-      <section hidden class="account section-grid" data-js="account">
-        <p>This area is under construction ...</p>
+      <section
+        class="account section-grid hidden"
+        data-js="page"
+        data-name="account"
+      >
+        <div class="profile-info shadow-card">
+          <figure class="profile-info__picture">
+            <img
+              src="../assets/portrait_square_bl.jpg"
+              alt=""
+              width="130"
+              height="130"
+            />
+            <h2 class="profile-info__name">Anneke Schütte</h2>
+            <h3 class="profile-info__motto">Sabbel nich dat geit.</h3>
+          </figure>
+          <div class="profile-info__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci
+            vero eum, possimus odio quod ea fugit aperiam perferendis
+            dignissimos, tempore necessitatibus.
+          </div>
+        </div>
       </section>
     </main>
     <footer class="app-grid__footer">
@@ -333,7 +357,8 @@
         <button
           class="navigation__item navigation__item--active"
           aria-label="Home"
-          data-js="nav-btn-1"
+          data-js="nav"
+          data-name="home"
         >
           <i class="icon-anchor1"></i>
           <span class="navigation__label">Home</span>
@@ -341,7 +366,8 @@
         <button
           class="navigation__item"
           aria-label="My Bookmarks"
-          data-js="nav-btn-2"
+          data-js="nav"
+          data-name="bookmarks"
         >
           <i class="icon-bookmark-outline"></i>
           <span class="navigation__label">Bookmarks</span>
@@ -349,7 +375,8 @@
         <button
           class="navigation__item"
           aria-label="Create a Quiz Card"
-          data-js="nav-btn-3"
+          data-js="nav"
+          data-name="create-card"
         >
           <i class="icon-list-add"></i>
           <span class="navigation__label">Add Card</span>
@@ -357,10 +384,11 @@
         <button
           class="navigation__item"
           aria-label="Quiz App Settings & Profile"
-          data-js="nav-btn-4"
+          data-js="nav"
+          data-name="account"
         >
           <i class="icon-user1"></i>
-          <span class="navigation__label">Settings</span>
+          <span class="navigation__label">Account</span>
         </button>
       </nav>
     </footer>

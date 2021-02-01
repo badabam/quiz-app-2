@@ -14,8 +14,7 @@
   transition: all 0.3s ease-out;
 }
 
-.quiz-card__bookmark--active,
-.quiz-card__bookmark:hover {
+.quiz-card__bookmark--active {
   color: var(--color-sky-blue1);
   transition: all 0.3s ease-out;
 }
