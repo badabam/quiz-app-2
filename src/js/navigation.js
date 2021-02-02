@@ -3,6 +3,7 @@ import cloneQuizCard from './cloneQuizCard'
 import callFormFunctions from './callFormFunctions'
 import toggleAnswer from './toggleAnswer'
 import toggleBookmark from './toggleBookmark'
+import toggleSwitch from './toggleSwitch'
 
 export default function navigation() {
   const pages = getAllByDataJs('page')
@@ -39,6 +40,9 @@ function callPageFunctions(clickedButtonName) {
       break
     case 'create-card':
       callFormFunctions()
+      break
+    case 'profile':
+      toggleSwitch()
       break
     default:
     // code block

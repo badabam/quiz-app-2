@@ -19,7 +19,7 @@
 .form__label {
   font-size: 0.9em;
   margin-bottom: 5px;
-  font-weight: 600;
+  font-weight: normal;
 }
 
 /* .form__input, */
@@ -35,7 +35,7 @@
 }
 
 .form__input::placeholder {
-  color: #999;
+  color: var(--color-lightjet);
 }
 
 .form__input,

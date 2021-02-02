@@ -1,0 +1,44 @@
+.profile__picture,
+.profile > .shadow-card {
+  display: grid;
+  justify-items: center;
+  position: relative;
+}
+.profile dl,
+.profile dt,
+.profile dd {
+  margin: 0;
+}
+.profile dt {
+  font-size: 0.6em;
+  color: var(--color-jet);
+  text-transform: uppercase;
+  margin-bottom: var(--space-xsmall);
+}
+
+.profile__picture > img {
+  border-radius: 100px;
+  border: 2px solid var(--color-sky-blue1);
+  padding: 5px;
+}
+.profile__name {
+  font-size: 1.1em;
+  margin-bottom: 0;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+}
+.profile__subline {
+  margin-top: 0;
+}
+.profile__description {
+  font-size: 0.9em;
+}
+.profile__subline--motto::before {
+  content: open-quote;
+  font-family: Times, serif;
+}
+.profile__subline--motto::after {
+  content: close-quote;
+  font-family: Times, serif;
+}

@@ -9,5 +9,6 @@
 @import '../components/quiz-card.css';
 @import '../components/badge.css';
 @import '../components/form.css';
-@import '../components/profile-info.css';
+@import '../components/profile.css';
 @import '../components/quote.css';
+@import '../components/toggle-switch.css';

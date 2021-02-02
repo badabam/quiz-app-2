@@ -1,5 +1,5 @@
-import './profile-info.css'
-import html from './profile-info.html'
+import './profile.css'
+import html from './profile.html'
 
 export default {
   title: 'Profile Info',

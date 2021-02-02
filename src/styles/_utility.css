@@ -10,6 +10,10 @@
   margin-bottom: var(--space-medium) !important;
 }
 
+.no-margin {
+  margin: 0 !important;
+}
+
 * + .margin {
   margin-top: var(--space-medium) !important;
 }
@@ -61,4 +65,68 @@
   background: #fff;
   padding: var(--space-medium);
   box-shadow: 0 0 5px #00000015;
+}
+
+.layout-dark .border-top {
+  border-top: 1px solid var(--color-pitch-black) !important;
+}
+.layout-dark,
+.layout-dark .app-grid__header,
+.layout-dark .app-grid__footer {
+  background: var(--color-pitch-black) !important;
+  color: var(--color-azure) !important;
+}
+.layout-dark .shadow-card {
+  background: var(--color-pitch-black);
+  color: var(--color-azure) !important;
+}
+.layout-dark .shadow-card {
+  border-top: 1px solid var(--color-sky-blue1);
+}
+.layout-dark .badge-group__badge {
+  background: var(--color-sky-blue1) !important;
+  color: var(--color-pitch-black);
+}
+.layout-dark .navigation__item {
+  background: var(--color-pitch-black);
+  color: var(--color-azure);
+}
+.layout-dark .navigation__item--active,
+.layout-dark .navigation__item:hover {
+  background: var(--color-pitch-black);
+  color: var(--color-sky-blue1);
+}
+.layout-dark .profile__name,
+.layout-dark .profile dt {
+  color: var(--color-sky-blue1) !important;
+}
+.layout-dark .toggle-switch__slider::after {
+  background: var(--color-pitch-black);
+}
+.layout-dark #option_default:checked ~ .toggle-switch__slider,
+.layout-dark #option_other:checked ~ .toggle-switch__slider {
+  background: var(--color-sky-blue1);
+}
+.layout-dark .form__submit,
+.layout-dark .quiz-card__button {
+  border-color: var(--color-azure);
+  color: var(--color-azure);
+}
+.layout-dark .quiz-card__button--active,
+.layout-dark .quiz-card__button:hover {
+  background-color: var(--color-azure);
+  color: var(--color-pitch-black);
+}
+.layout-dark .form__label,
+.layout-dark .form__submit,
+.layout-dark .form__counter-indicator {
+  color: var(--color-azure);
+}
+.layout-dark .quiz-card__bookmark::before {
+  content: '\e92e';
+  color: var(--color-sky-blue1);
+  background: var(--color-pitch-black);
+}
+.layout-dark .quiz-card__bookmark--active::before {
+  content: '\e92b';
 }
