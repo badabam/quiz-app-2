@@ -1,6 +1,7 @@
 import getByDataJs from './getByDataJs'
 import getAllByDataJs from './getAllByDataJs'
 import getByClass from './getByClass'
+import getAllByClass from './getAllByClass'
 
 export default function callFormFunctions() {
   setFocus()
@@ -43,6 +44,19 @@ export default function callFormFunctions() {
       event.preventDefault()
       form.reset()
       setFocus()
+      counterReset()
     })
+  }
+
+  function counterReset() {
+    const formFields = getAllByDataJs('form-field')
+    const counters = getAllByClass('form__counter-indicator')
+
+    formFields.forEach(field => {
+      counters.forEach(counter => {
+        counter.outerHTML = ''
+      })
+    })
+    countInput()
   }
 }
