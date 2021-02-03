@@ -4,6 +4,8 @@ import getByClass from './getByClass'
 import getAllByClass from './getAllByClass'
 
 export default function callFormFunctions() {
+  const counters = []
+
   setFocus()
   countInput()
   resetForm()
@@ -14,7 +16,7 @@ export default function callFormFunctions() {
   }
 
   function countInput() {
-    const formFields = getAllByDataJs('form-field')
+    const formFields = getAllByDataJs('form-field') // textarea
 
     formFields.forEach(field => {
       const countMax = field.maxLength
@@ -23,6 +25,9 @@ export default function callFormFunctions() {
       const counterEl = document.createElement('span')
       counterEl.className = 'form__counter-indicator'
       counterEl.innerHTML = `${countMax}`
+
+      counters.push({el: counterEl, countMax: countMax})
+
       const charCounter = field.parentElement
       charCounter.appendChild(counterEl)
 
@@ -49,14 +54,8 @@ export default function callFormFunctions() {
   }
 
   function counterReset() {
-    const formFields = getAllByDataJs('form-field')
-    const counters = getAllByClass('form__counter-indicator')
-
-    formFields.forEach(field => {
-      counters.forEach(counter => {
-        counter.outerHTML = ''
-      })
+    counters.forEach(counter => {
+      counter.el.textContent = counter.countMax
     })
-    countInput()
   }
 }
